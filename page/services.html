@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delicia - Services</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Cafe Delicia</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/page/about.html">About</a></li>
+            <li><a href="/page/services.html">Service</a></li>
+            <li><a href="/page/gallery.html">Gallery</a></li>
+            <li><a href="/page/contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navLinks");
+            
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+    <main>
+        <section class="hero services-hero">
+            <div class="hero-content">
+                <h1>Nuestros Servicios</h1>
+                <p>Descubre nuestra selección de cafés y acompañamientos que deleitarán tu paladar.</p>
+            </div>
+        </section>
+
+        <section class="content-section services-intro">
+            <div class="intro-content">
+                <h2>Una Experiencia Única</h2>
+                <p>En Café Delicia, ofrecemos más que café: ofrecemos momentos. Desde un espresso clásico hasta un pastel recién horneado, cada producto está hecho con amor y dedicación.</p>
+            </div>
+            <div class="intro-image">
+                <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=600&auto=format&fit=crop" alt="Café">
+            </div>
+        </section>
+
+        <section class="content-section services-menu">
+            <h2>Nuestra Carta</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/cemrecan-yurtman-XXLXQYrKuqo-unsplash.jpg" alt="Espresso">
+                    <h3>Espresso Clásico</h3>
+                    <p>Café 100% colombiano, intenso y aromático. $5.000</p>
+                    <a href="#" class="btn">Pedir Ahora</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=200&auto=format&fit=crop" alt="Latte">
+                    <h3>Latte de Vainilla</h3>
+                    <p>Espresso con leche vaporizada y un toque de vainilla. $7.000</p>
+                    <a href="#" class="btn">Pedir Ahora</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/jeanie-de-klerk-hmLY7GiNFyE-unsplash.jpg" alt="Cold Brew">
+                    <h3>Cold Brew</h3>
+                    <p>Café frío infusionado por 12 horas, refrescante y suave. $6.500</p>
+                    <a href="#" class="btn">Pedir Ahora</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=200&auto=format&fit=crop" alt="Pastel">
+                    <h3>Pastel de Chocolate</h3>
+                    <p>Bizcocho húmedo con ganache de chocolate. $4.000</p>
+                    <a href="#" class="btn">Pedir Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section special-offers">
+            <h2>Ofertas Especiales</h2>
+            <div class="offers-container">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=300&auto=format&fit=crop" alt="Oferta 1">
+                    <h3>Combo Mañanero</h3>
+                    <p>Espresso + Croissant por solo $8.000</p>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1494314675222-991e7b831357?q=80&w=300&auto=format&fit=crop" alt="Oferta 2">
+                    <h3>Tarde Dulce</h3>
+                    <p>Latte + Pastel por solo $9.500</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Café Delicia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

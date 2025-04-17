@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delicia - About</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Cafe Delicia</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/page/about.html">About</a></li>
+            <li><a href="/page/services.html">Service</a></li>
+            <li><a href="/page/gallery.html">Gallery</a></li>
+            <li><a href="/page/contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navLinks");
+            
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+    <main>
+        <section class="hero about-hero">
+            <div class="hero-content">
+                <h1>Nuestra Historia</h1>
+                <p>Conoce cómo Café Delicia se convirtió en un ícono del café artesanal en Bogotá.</p>
+            </div>
+        </section>
+
+        <section class="content-section about-story">
+            <div class="story-content">
+                <h2>Desde 1995, un Legado de Sabor</h2>
+                <p>Café Delicia nació hace más de 25 años con un sueño: llevar el auténtico sabor del café colombiano a cada rincón de Bogotá. Fundada por María Gómez, una apasionada barista, nuestra cafetería ha crecido gracias al amor por los granos de café de origen único y al compromiso con la calidad.</p>
+                <p>Trabajamos directamente con pequeños productores locales para garantizar que cada taza que servimos cuente una historia de tradición, esfuerzo y sostenibilidad.</p>
+            </div>
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600&auto=format&fit=crop" alt="Cafetería">
+            </div>
+        </section>
+
+        <section class="content-section team-section">
+            <h2>Nuestra Familia</h2>
+            <p>Conoce al equipo que hace posible cada taza perfecta en Café Delicia.</p>
+            <div class="team-container">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="María">
+                    <h3>María Gómez</h3>
+                    <p>Fundadora y barista experta con 25 años de experiencia.</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Juan">
+                    <h3>Juan Pérez</h3>
+                    <p>Maestro tostador, apasionado por los granos colombianos.</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Sofía">
+                    <h3>Sofía López</h3>
+                    <p>Repostera creativa detrás de nuestros postres.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section values-section">
+            <h2>Nuestros Valores</h2>
+            <div class="values-container">
+                <div class="value-item">
+                    <h3>Sostenibilidad</h3>
+                    <p>Apoyamos a productores locales y usamos prácticas sostenibles.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Calidad</h3>
+                    <p>Seleccionamos los mejores granos para cada taza.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Comunidad</h3>
+                    <p>Creemos en crear un espacio acogedor para todos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Café Delicia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

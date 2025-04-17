@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delicia - Gallery</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Cafe Delicia</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/page/about.html">About</a></li>
+            <li><a href="/page/services.html">Service</a></li>
+            <li><a href="/page/gallery.html">Gallery</a></li>
+            <li><a href="/page/contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navLinks");
+            
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+    <main>
+        <section class="hero gallery-hero">
+            <div class="hero-content">
+                <h1>Nuestra Galería</h1>
+                <p>Explora los momentos y espacios que hacen de Café Delicia un lugar especial.</p>
+            </div>
+        </section>
+
+        <section class="content-section gallery-carousel">
+            <h2>Espacios Acogedores</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600&auto=format&fit=crop" alt="Interior 1" class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop" alt="Interior 2" class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=600&auto=format&fit=crop" alt="Exterior" class="carousel-item">
+                </div>
+                <button class="carousel-prev">❮</button>
+                <button class="carousel-next">❯</button>
+            </div>
+        </section>
+
+        <section class="content-section gallery-grid">
+            <h2>Momentos Especiales</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/images/cemrecan-yurtman-XXLXQYrKuqo-unsplash.jpg" alt="Momento 1">
+                    <p>Preparando un espresso perfecto.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=300&auto=format&fit=crop" alt="Momento 2">
+                    <p>Clientes disfrutando de una tarde tranquila.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=300&auto=format&fit=crop" alt="Momento 3">
+                    <p>Nuestra barra de café artesanal.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=300&auto=format&fit=crop" alt="Momento 4">
+                    <p>Detalles de nuestro espacio rústico.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section testimonials">
+            <h2>Lo que Dicen Nuestros Clientes</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p>"El mejor café que he probado en Bogotá. El ambiente es increíble."</p>
+                    <h3>- Ana Martínez</h3>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Me encanta el Cold Brew de Café Delicia, siempre fresco y delicioso."</p>
+                    <h3>- Carlos Rodríguez</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Café Delicia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const prev = document.querySelector('.carousel-prev');
+        const next = document.querySelector('.carousel-next');
+        const items = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            items.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+        }
+
+        prev.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            showSlide(currentIndex);
+        });
+
+        next.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % items.length;
+            showSlide(currentIndex);
+        });
+    </script>
+</body>
+</html>

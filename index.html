@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delicia - Inicio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Cafe Delicia</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="/page/about.html">About</a></li>
+            <li><a href="/page/services.html">Service</a></li>
+            <li><a href="/page/gallery.html">Gallery</a></li>
+            <li><a href="/page/contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navLinks");
+            
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>We Are, Human & Coffee</h1>
+                <p>En Café Delicia, llevamos más de 25 años sirviendo el mejor café artesanal de Bogotá. Disfruta de nuestros granos seleccionados y tostados con amor.</p>
+                <a href="services.html" class="btn">Explora Más</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop" alt="Paquete de café">
+                <div class="highlight-box">
+                    <h3>Granos de Café Premium</h3>
+                    <p>100% Colombiano - Tostado Localmente</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <h3>Tostado a Mano</h3>
+                <p>Nuestros granos son tostados a mano para garantizar la mejor calidad.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Frescura Garantizada</h3>
+                <p>Empacamos cada pedido con la máxima frescura.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Entrega Rápida</h3>
+                <p>Recibe tu café favorito en menos de 48 horas.</p>
+            </div>
+        </section>
+
+        <section class="blend-section">
+            <div class="blend-content">
+                <h2>House Blend & Single Origin</h2>
+                <p>Descubre la diferencia entre nuestras mezclas únicas y los cafés de origen único. Cada taza cuenta una historia de sabor y tradición.</p>
+                <a href="services.html" class="btn">Ver Más</a>
+            </div>
+            <div class="blend-image">
+                <img src="images/nathan-dumlao-zUNs99PGDg0-unsplash.jpg">
+            </div>
+        </section>
+
+        <section class="best-sellers">
+            <h2>Best Sellers</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/cemrecan-yurtman-XXLXQYrKuqo-unsplash.jpg" alt="Espresso">
+                    <h3>Espresso Clásico</h3>
+                    <p>$5.000</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/abolfazl-eslami-qHTyT-lxUBU-unsplash.jpg" alt="Latte">
+                    <h3>Latte de Vainilla</h3>
+                    <p>$7.000</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" alt="Cold Brew">
+                    <h3>Cold Brew</h3>
+                    <p>$6.500</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Café Delicia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
