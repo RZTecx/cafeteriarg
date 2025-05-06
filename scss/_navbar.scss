@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary-color;
+  padding: 15px 20px;
+  position: relative;
+
+  .logo {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 0 10px;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    div {
+      width: 25px;
+      height: 3px;
+      background: $white;
+      margin: 5px;
+    }
+  }
+}
