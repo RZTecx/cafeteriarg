@@ -91,6 +91,7 @@ body {
   margin-bottom: 2rem;
 }
 
+
 /* Hero específico para About */
 .about-hero {
   background-image: linear-gradient(rgba(46, 59, 47, 0.7), rgba(46, 59, 47, 0.7)), url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop");
@@ -653,6 +654,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1.5rem;
+  min-height: 11vh;
 }
 
 /* Media Queries para mayor responsividad */
